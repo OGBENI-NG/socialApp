@@ -1,0 +1,276 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+header {
+    padding: .5em 2em;
+    background: #c0c0c0;
+}
+
+.header-con {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+ul li {
+    margin: 0.5rem;
+    list-style: none;
+}
+
+li a {
+    font-size: 1.234rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #4357ad;
+    margin-left: -49px;
+    letter-spacing: 1px;
+
+}
+
+li a:hover,
+li a:active {
+    color: #04a777;
+    text-decoration: underline;
+}
+
+
+/* =================
+   Typography 
+   ================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+.header-text {
+    color: #006ba6;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.header-text + p {
+    text-transform: uppercase;
+    color: #003844;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h1 + a {
+    color: #04a777;
+    font-weight: 700;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+}
+
+h1 + a:hover {
+    color: #006ba6;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 700;
+    color: #003844;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    margin: 0;
+    padding-top: 2px;
+    color: #04a777;
+    font-weight: 700;
+    text-transform: uppercase;
+    order: -1;
+    border-top: 5px solid;
+    border-image: linear-gradient(to left, #04a777, #006ba6) 1;
+}
+
+.bottom-text {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+strong { 
+    font-weight: 700;
+    color: #04a777; 
+}
+
+
+
+
+
+/* =================
+   Intro section 
+   ================= */
+   
+.intro {
+    background-image: url(images/social.jpg);
+    background-color: #404040;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+
+/* =================
+   form-page section 
+   ================= */
+   
+.form-page {
+    padding: 2em 1em;
+    background-image: linear-gradient(to left, #c0c0c0, #d6d6d6);
+}
+
+
+
+.intro > *,
+.form-page > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =================
+   form
+   ================= */
+   
+.email-manager {
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    font-family: inherit;
+    text-align: inherit;
+    margin-bottom: .75em;
+    padding: .25em;
+    border: 1px solid #404040;
+    transform: scale(1);
+    transition: transform 250ms;
+    outline: #003844;
+}
+
+input:focus {
+    transform: scale(1.1);
+    border: 1px solid #04a777;
+    
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-main {
+    background-image: linear-gradient(to left, #4357ad, #326273);
+    color: white;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+    transform: scale(1.1);
+    
+}
+
+
+footer {
+    padding: 2rem;
+    color: #fff;
+    background: #326273;
+    text-align: center;
+    font-weight: 400;
+}
+/* =================
+   media queries 
+   ================= */
+   
+@media (min-width: 500px) {
+    main {
+        font-size: 1.125rem;
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    
+    .intro,
+    .form-page {
+        width: 50%;
+        min-height: 100vh;
+    }
+    
+    .form-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .con {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    
+  
+}
+
